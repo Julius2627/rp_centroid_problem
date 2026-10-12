@@ -17,7 +17,7 @@ from pathlib import Path
 
 import methods
 
-NR_FACILITIES = [5, 10, 15, 20]
+NR_FACILITIES = [5]
 
 def discover_instances(instance_dir):
     """Alle Instanz-CSVs, sortiert (stabile, reproduzierbare Reihenfolge)."""
