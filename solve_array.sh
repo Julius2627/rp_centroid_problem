@@ -3,7 +3,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=6                # ggf. an Threads-Setting in deinen Methoden anpassen
 #SBATCH --mem=66G                          # TODO: an Modellgroesse anpassen
-#SBATCH --time=02:40:00                   # TODO: deutlich > internes --time-limit unten
+#SBATCH --time=11:00:00                   # TODO: deutlich > internes --time-limit unten
 #SBATCH --partition=cpu
 #SBATCH --output=logs/%x_%A_%a.out
 #SBATCH --error=logs/%x_%A_%a.err
@@ -37,4 +37,4 @@ source "$VENV_DIR/bin/activate"
 # keines frei, wird alle ~60 s erneut versucht. Klappt es bis zum Ablauf
 # nicht, steht status=NO_LICENSE in der Ergebnisdatei.
 python main.py --task-id "$SLURM_ARRAY_TASK_ID" --instance-dir instances \
-    --time-limit 7200 --license-wait 900 --license-poll 60
+    --time-limit 36000 --license-wait 900 --license-poll 60
