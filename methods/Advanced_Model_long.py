@@ -21,7 +21,7 @@ import csv
 # ---------------------------------------------------------------------------
 @dataclass(frozen = True)
 class SolverParams:
-    time_limit: int = 7200            # time_limit for Gurobi solver
+    time_limit: int = 36000            # time_limit for Gurobi solver
     threads: int = 4                  # number of threads per run --cpus-per-task in solve_array.sh needs to be adjusted
     log_to_console_sub: int = 0     # output of Gurobi for submodels in Terminal (off in experiments)
     log_to_console_main: int = 0      # output of Gurobi for main-model in Terminal (off in experiments)
