@@ -25,7 +25,7 @@ class SolverParams:
     threads: int = 4                  # number of threads per run --cpus-per-task in solve_array.sh needs to be adjusted
     log_to_console_sub: int = 0     # output of Gurobi for submodels in Terminal (off in experiments)
     log_to_console_main: int = 0      # output of Gurobi for main-model in Terminal (off in experiments)
-    mem: float = 64                  # GB of memory allowed
+    mem: float = 40                  # GB of memory allowed
     #absGap: float = 0.99
 
 # ---------------------------------------------------------------------------
